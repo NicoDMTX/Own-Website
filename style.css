@@ -5,8 +5,9 @@
 }
 
 body{
-    background-color: #197278;
+    background-color: #283D3B;
     font-family: YuseiMagic-Regular;
+    height:100%;
 }
 
 @font-face{
@@ -18,43 +19,58 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    height: 100vh;
 }
+
+.card{
+  background: #40635F;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+  box-shadow: 0px 4px 18px 0px black;
+}
+
+.inside_cv{
+    display: flex
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.picture_of_me{
+    width: 150px;
+    border-radius: 50px;
+    border-color: black;
+    border-style: solid;
+    cursor: pointer;
+}
+
+/* all the hovers */
 
 .card:hover {
     transform : scale(1.2);
     transform: translate(0, 10px);
     transition: 1s;
- 
 }
 
-.card{
-  background: #fff;
-  border-radius: 20px;
-  display: inline-block;
-  height: 300px;
-  margin: 1rem;
-  position: relative;
-  width: 300px;
-  box-shadow: 0px 4px 18px 0px black
+.picture_of_me:hover{
+    transform: scale(1);
+    transition: 1.5s;
+    transform: translate(0, 5px);
 }
-
-
-
-
-
 
 /*Titles and texts part*/ 
 h1{
     text-align: center;
-    color: #2AC0CB;
+    color: black;
     letter-spacing: 1px;
     font-size: 26px;
-}
-
-.picture_of_me{
-    width: 150px;
-    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .p__motivations{
