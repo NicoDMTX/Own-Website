@@ -23,6 +23,45 @@ body{
     height: 100vh;
 }
 
+.navbar{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #40635F;
+}
+
+.navbar li{
+    padding: 1rem;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+
+.btn_connect{
+    border-left: 1px solid black;
+}
+
+li:hover{
+    transition: 1s;
+    color: white;
+    background-color: #282828;
+}
+
+/*
+#btn_connexion{
+    border-style: none;
+    border-radius: 12px;
+    color: black;
+    width: 10%;
+    height: 45px;
+    margin-left: 12px;
+    cursor:pointer;
+    background: #40635F;
+    box-shadow: 0px 5px 12px -5px black;
+}
+*/
 .card{
   background: #40635F;
   border-radius: 20px;
@@ -33,6 +72,7 @@ body{
   position: relative;
   width: 300px;
   box-shadow: 0px 4px 18px 0px black;
+  cursor:pointer;
 }
 
 .inside_cv{
@@ -48,29 +88,37 @@ body{
     border-color: black;
     border-style: solid;
     cursor: pointer;
+    box-shadow: 0px 3px 10px #283D3B ;
 }
 
 /* all the hovers */
 
-.card:hover {
-    transform : scale(1.2);
+.card:hover h1{
+    transform: translate(0, 5px);
+    transition: 1s;
+    transform:scale(1.1);
+    text-decoration: underline;
+}
+.card:hover .picture_of_me{
     transform: translate(0, 10px);
     transition: 1s;
 }
 
-.picture_of_me:hover{
-    transform: scale(1);
-    transition: 1.5s;
-    transform: translate(0, 5px);
+.card:hover{
+    transform: scale(1.5);
+    transition: 1s;         
+    transform: translate(0, 10px);
 }
 
-/*Titles and texts part*/ 
+/*Titles and texts part*/
+
 h1{
     text-align: center;
-    color: black;
+    color: white;
     letter-spacing: 1px;
     font-size: 26px;
     padding-bottom: 15px;
+    cursor: pointer;
 }
 
 .p__motivations{
