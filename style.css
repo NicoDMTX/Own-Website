@@ -151,3 +151,43 @@ h1{
     width: 20px;
 }
 /*cv.html part */
+
+
+
+
+
+
+
+/*TEST*/
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+   }
+   ::-webkit-scrollbar-thumb {
+    background: radial-gradient(circle, #40635f 36%,#283d3b 86%);
+    border-radius: 10px;
+    box-shadow: inset 23px 17px 12px #40635f;
+   }
+   ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #18268d 14%,#c325d8 100%);
+   }
+   ::-webkit-scrollbar-track{
+    background: #283d3b;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #40635F;
+   }
+
+.container_js{
+    height: 80vh;
+    width: 80%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+    z-index:1000;
+    overflow-x: scroll;
+    
+}
